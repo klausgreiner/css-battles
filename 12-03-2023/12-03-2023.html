@@ -1,0 +1,35 @@
+<div class="rectangle"></div>
+<div class="central rotated"></div>
+<div class="top rotated"></div>
+<div class="bottom rotated"></div>
+<style>
+  body {
+    background: #2c4228;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rectangle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #a6ce39;
+  }
+  .rotated {
+    width: 220px;
+    height: 30px;
+    transform: rotate(135deg);
+    background: #2c4228;
+  }
+  .central {
+    position: relative;
+  }
+  .bottom {
+    position: absolute;
+    margin: 0 50 120 0;
+  }
+  .top {
+    position: absolute;
+    margin: 0 0 -50 120;
+  }
+</style>
