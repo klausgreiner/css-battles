@@ -1,0 +1,42 @@
+<div class="main-rect"></div>
+<div class="triangle2"></div>
+<div class="triangle"></div>
+
+<style>
+  body {
+    background: #b6d463;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-rect {
+    background: #2e432a;
+    width: 160px;
+    height: 160px;
+    z-index: -2;
+  }
+
+  .triangle,
+  triangle2 {
+    position: absolute;
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-top: 73px solid transparent;
+    border-bottom: 73px solid transparent;
+    border-left: 73px solid #2e432a;
+    left: 120px;
+    z-index: 0;
+  }
+  .triangle2 {
+    position: absolute;
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-top: 115px solid transparent;
+    border-bottom: 115px solid transparent;
+    border-left: 115px solid #b6d463;
+    left: 120px;
+    z-index: -1;
+  }
+</style>
