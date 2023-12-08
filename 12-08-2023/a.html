@@ -1,0 +1,43 @@
+<div class="triangle right"></div>
+<div class="triangle left"></div>
+<div class="triangle top"></div>
+<div class="triangle bottom"></div>
+<style>
+  body {
+    background: #5b8395;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .triangle {
+    position: absolute;
+    width: 0;
+    height: 0px;
+    background: transparent;
+    border-top: 78px solid transparent;
+    border-bottom: 78px solid transparent;
+    border-left: 78px solid #e3f5fd;
+  }
+  .left {
+    transform: rotate(180deg);
+    right: 80;
+  }
+  .right {
+    left: 80;
+  }
+  .top {
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid #e3f5fd;
+    transform: rotate(90deg);
+    top: 30;
+  }
+  .bottom {
+    border-top: 80px solid transparent;
+    border-bottom: 80px solid transparent;
+    border-left: 80px solid #e3f5fd;
+    transform: rotate(270deg);
+    bottom: 30;
+  }
+</style>
